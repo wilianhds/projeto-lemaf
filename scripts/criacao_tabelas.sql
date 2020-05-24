@@ -26,6 +26,7 @@ CREATE TABLE projeto.usuario (
 	id serial NOT NULL,
 	id_pessoa integer NOT NULL,
     id_cargo integer NOT NULL,
+	data_cadastro timestamp NOT NULL,
 	CONSTRAINT usuario_id PRIMARY KEY (id),
 	CONSTRAINT usuario_pessoa FOREIGN KEY (id) REFERENCES projeto.pessoa(id) ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT usuario_cargo FOREIGN KEY (id) REFERENCES projeto.cargo(id) ON DELETE CASCADE ON UPDATE CASCADE
