@@ -24,6 +24,17 @@ public class Pessoa {
     @Column(name = "sexo")
     private char sexo;
 
+    public Pessoa() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getNome() {
         return nome;
     }

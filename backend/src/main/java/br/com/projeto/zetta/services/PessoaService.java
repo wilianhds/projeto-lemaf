@@ -1,5 +1,6 @@
 package br.com.projeto.zetta.services;
 
+import br.com.projeto.zetta.auxiliar.UsuarioAuxiliar;
 import br.com.projeto.zetta.models.Pessoa;
 import br.com.projeto.zetta.repository.PessoaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,8 @@ public class PessoaService {
     private PessoaRepository repository;
 
     public Pessoa findByCpf(String cpf) {
+
         return this.repository.findByCpf(cpf);
     }
+
 }

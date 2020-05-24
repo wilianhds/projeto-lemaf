@@ -2,7 +2,6 @@ package br.com.projeto.zetta.controller;
 
 import br.com.projeto.zetta.models.Pessoa;
 import br.com.projeto.zetta.services.PessoaService;
-import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
