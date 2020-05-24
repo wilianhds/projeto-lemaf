@@ -6,6 +6,8 @@ import br.com.projeto.zetta.repository.CargoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class CargoService {
 
@@ -30,5 +32,9 @@ public class CargoService {
             repository.save(cargo);
         }
         return cargo;
+    }
+
+    public List<Cargo> listarTodos() {
+        return repository.findAllByOrderByNome();
     }
 }
