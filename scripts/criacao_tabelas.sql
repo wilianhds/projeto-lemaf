@@ -12,6 +12,7 @@ CREATE TABLE projeto.cargo (
 	id serial NOT NULL,
 	nome varchar(256) NOT NULL,
     CONSTRAINT cargo_id PRIMARY KEY (id)
+	CONSTRAINT cargo_un UNIQUE (nome)
 );
 
 CREATE TABLE projeto.perfil (
