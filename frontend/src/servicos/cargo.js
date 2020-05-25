@@ -1,7 +1,7 @@
 import {http} from './configuracoes.js'
 
 export default {
-    usuarios: () => {
-        return http.get('/usuario/listar')
+    cargos: () => { 
+        return http.get('/cargo/listar')
     }
 }
